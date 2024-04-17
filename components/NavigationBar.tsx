@@ -12,7 +12,7 @@ export default async function NavBar({
   };
 
   return (
-    <nav className="flex h-32 w-full flex-col justify-center items-center">
+    <nav className="sticky top-0 flex h-28 w-full flex-col justify-center items-center border-b border-english-violet">
       <div className="flex flex-row justify-center">
         <div className="flex w-full max-w-4xl items-center justify-between p-3 text-sm">
           <div className="flex gap-1">
