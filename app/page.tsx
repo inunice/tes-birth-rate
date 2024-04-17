@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <div>
+    <div className>
       <NavigationBar currentActive={"overview"} />
       <Header />
     </div>

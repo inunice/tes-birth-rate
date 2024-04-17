@@ -1,16 +1,14 @@
 import "@/app/globals.css";
 
-export default async function NavBar() {
+export default async function Header() {
   return (
-    <div className="bg-eggshell max-w-full h-screen px-[30px] py-[80px] flex flex-row items-center justify-center gap-20 flex-wrap">
-      <p className="max-w-[70vh] text-[70px] font-bagnard text-persian-red text-right leading-none">
-        logo
-      </p>
+    <div className="bg-eggshell mx-[250px] my-[200px] flex flex-row items-center justify-center gap-20">
+      <p className="text-[70px] mx-[200px]">logo</p>
       <div>
         <p className="text-[50px] font-inter tracking-tight">
           Hello, we are <span className="font-bold">TES</span>!
         </p>
-        <p className="max-w-[70vh] text-lg text-eerie-black">
+        <p className="text-lg">
           This is our project, <span className="font-bold">Mother!</span>, a
           data science project dedicated to analyzing the dynamics surrounding
           child birth statistics and socioeconomic factors, particularly
