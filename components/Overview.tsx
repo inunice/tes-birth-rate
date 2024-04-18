@@ -21,9 +21,9 @@ export default async function Overview() {
           </p>
           <p className="text-lg text-center w-[600px]">
             In 2023, however, CNA Insider reported that the Philippines has
-            successfully lowered its birth rate. This begs the question, how
-            much does the economic situation of the people in the Philippines
-            impact their decision to have children?
+            successfully lowered its birth rate. This begs the question, what
+            led to this development? Does the economic situation of the people
+            in the Philippines impact their decision to have children?
           </p>
         </div>
         <span className="text-gray-500 text-center">
@@ -144,7 +144,7 @@ export default async function Overview() {
           </div>
           <div className="flex-1 flex flex-col gap-2 items-center justify-center">
             <p className="font-urbanist text-base font-bold text-teal text-center uppercase">
-              Secondary Question
+              Alternative Hypothesis
             </p>
             <p className="text-2xl text-center w-[500px]">
               There is no significant correlation between the economic status,
