@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Roboto } from "next/font/google";
+import { PT_Sans, Urbanist } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+const urbanist = Urbanist({ subsets: ["latin"] });
+const pt_sans = PT_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mother!",
@@ -18,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${roboto.className}`}>
+      <body className={`${urbanist.className} ${pt_sans.className}`}>
         {children}
       </body>
     </html>
