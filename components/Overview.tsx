@@ -1,9 +1,11 @@
 import "@/app/globals.css";
 
+import SectionTitle from "@/components/SectionTitle";
+
 export default async function Overview() {
   return (
     <div className="my-[200px] flex flex-col items-center justify-center gap-10">
-      <span className="w-full border-text my-20"></span>
+      <SectionTitle title="Overview" />
       <div className="flex flex-col gap-8">
         <p className="font-urbanist text-2xl font-bold text-bittersweet text-center">
           Why are we doing this?

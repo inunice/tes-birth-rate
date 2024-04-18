@@ -20,7 +20,7 @@
 
   .border-text::before,
   .border-text::after {
-    content: "Overview Overview Overview Overview Overview Overview Overview";
+    content: attr(data-content);
     white-space: nowrap;
     overflow: hidden;
     font-family: var(--font-urbanist);
