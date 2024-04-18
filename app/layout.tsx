@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import { PT_Sans, Urbanist } from "next/font/google";
 import "./globals.css";
 
-const urbanist = Urbanist({ subsets: ["latin"] });
-const pt_sans = PT_Sans({ weight: "400", subsets: ["latin"] });
+const pt_sans = PT_Sans({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-pt_sans",
+});
+const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-urbanist" });
 
 export const metadata: Metadata = {
   title: "Mother!",
@@ -17,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.className} ${pt_sans.className}`}>
+      <body className={`${pt_sans.variable} ${urbanist.variable}`}>
         {children}
       </body>
     </html>

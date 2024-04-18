@@ -25,6 +25,7 @@ const config: Config = {
         },
       fontFamily: {
         sans: ['var(--font-pt_sans)', 'sans-serif'],
+        'urbanist': ['var(--font-urbanist)'],
       },
       colors: {
         "naples-yellow": "#F7CD46",

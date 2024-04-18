@@ -2,10 +2,10 @@ import "@/app/globals.css";
 
 export default async function Header() {
   return (
-    <div className="mx-[250px] my-[200px] flex flex-row items-center justify-center gap-20">
+    <div className="mx-[250px] my-[200px] flex flex-row items-center justify-center gap-1">
       <p className="text-[70px] mx-[200px]">logo</p>
       <div>
-        <p className="text-[50px] font-inter tracking-tight">
+        <h1 className="text-[60px] font-urbanist tracking-tight">
           Hello, we are{" "}
           <span
             className="font-semibold 
@@ -17,8 +17,8 @@ export default async function Header() {
             TES
           </span>
           !
-        </p>
-        <p className="text-lg w-[700px]">
+        </h1>
+        <p className="text-lg w-[550px]">
           This is our project,{" "}
           <span
             className="font-semibold 
@@ -29,7 +29,7 @@ export default async function Header() {
           >
             Mother!
           </span>
-          , a data science project dedicated to analyzing the dynamics
+          , a data science adventure dedicated to analyzing the dynamics
           surrounding child birth statistics and socioeconomic factors,
           particularly focusing on the influence of economic status and
           geographic location in the Philippines. Through our findings, we aim
