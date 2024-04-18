@@ -163,10 +163,10 @@ export default async function Overview() {
         </p>
         <p className="text-lg text-center w-[700px]">
           We will collate statistical datasets from the Philippine Statistics
-          Authority (PSA) on live births, population, and economic status for
-          each municipality in the Philippines and use tools from statistics and
-          machine learning to come up with conclusions that paint the
-          relationships between these parameters.
+          Authority (PSA) on live births and poverty rates for each municipality
+          in the Philippines and use tools from statistics and machine learning
+          to come up with conclusions that paint the relationships between these
+          parameters.
         </p>
       </div>
     </div>
