@@ -9,7 +9,7 @@ export default async function Overview() {
       <p className="font-inter text-xl font-bold text-english-violet">
         Why are we doing this?
       </p>
-      <p className="text-3xl">
+      <p className="text-3xl font-bold">
         It is <span className="italic">expensive</span> to have a child in this
         economy.
       </p>
@@ -26,23 +26,57 @@ export default async function Overview() {
         their decision to have children?
       </p>
 
-      <p>Problem</p>
-      <p>
-        Despite the significant financial burden of raising children in the
-        Philippines, there is a lack of understanding regarding how the economic
-        circumstances of individuals influence their decisions regarding family
-        planning.
-      </p>
+      <div className="flex gap-[100px] w-[1200px]">
+        <div className="flex-1 flex flex-col gap-5">
+          <p className="font-inter text-xl font-bold text-english-violet text-center">
+            Problem
+          </p>
+          <p>
+            Despite the significant financial burden of raising children in the
+            Philippines, there is a lack of understanding regarding how the
+            economic circumstances of individuals influence their decisions
+            regarding family planning.
+          </p>
+        </div>
 
-      <p>Solution</p>
-      <p>
-        Using data science, we intend on analyzing economic indicators,
-        geographical data, and maternal preferences to explore their combined
-        impact on birth rates in the Philippines and promote family planning in
-        highly impacted areas.
-      </p>
+        <div className="flex-1 flex flex-col gap-5">
+          <p className="font-inter text-xl font-bold text-english-violet text-center">
+            Solution
+          </p>
+          <p>
+            Using data science, we intend on analyzing economic indicators,
+            geographical data, and maternal preferences to explore their
+            combined impact on birth rates in the Philippines and promote family
+            planning in highly impacted areas.
+          </p>
+        </div>
+      </div>
 
-      <p>So, we'd like to figure out...</p>
+      <div className="flex gap-[100px] w-[1200px]">
+        <div className="flex-1 flex flex-col gap-5">
+          <p className="font-inter text-xl font-bold text-english-violet text-center">
+            So we'd like to figure out...
+          </p>
+          <p>
+            Despite the significant financial burden of raising children in the
+            Philippines, there is a lack of understanding regarding how the
+            economic circumstances of individuals influence their decisions
+            regarding family planning.
+          </p>
+        </div>
+
+        <div className="flex-1 flex flex-col gap-5">
+          <p className="font-inter text-xl font-bold text-english-violet text-center">
+            And we hypothesize...
+          </p>
+          <p>
+            Using data science, we intend on analyzing economic indicators,
+            geographical data, and maternal preferences to explore their
+            combined impact on birth rates in the Philippines and promote family
+            planning in highly impacted areas.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

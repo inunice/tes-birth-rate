@@ -12,9 +12,10 @@ const config: Config = {
         sans: ['var(--font-roboto)', 'sans-serif'],
       },
       colors: {
-        "naples-yellow": "#F4D35E",
-        "bittersweet": "#FF6F61",
+        "naples-yellow": "#F7CD46",
+        "bittersweet": "#DE5935",
         "english-violet": "#4C4B63",
+        "teal": "#5AC3B0",
       },
     },
   },
