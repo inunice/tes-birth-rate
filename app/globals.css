@@ -14,7 +14,6 @@
   }
 
   .border-text {
-    position: relative;
     width: 100vw; /* Adjust as needed */
     overflow: hidden;
   }
@@ -27,15 +26,5 @@
     font-family: var(--font-urbanist);
     font-size: 30px;
     color: #5AC3B0;
-    word-spacing: 10px;
-  }
-  
-  .border-text::before {
-    top: 0;
-    left: 0;
-  }
-  
-  .border-text::after {
-    bottom: 0;
-    right: 0;
+    word-spacing: 15px;
   }

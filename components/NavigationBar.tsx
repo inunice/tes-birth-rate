@@ -12,7 +12,7 @@ export default async function NavBar({
   };
 
   return (
-    <nav className="sticky top-0 flex h-28 w-full flex-col justify-center items-center border-b border-english-violet">
+    <nav className="bg-white opacity-90 sticky top-0 flex h-28 w-full flex-col justify-center items-center border-b border-english-violet">
       <div className="flex flex-row justify-center">
         <div className="flex w-full max-w-4xl items-center justify-between p-3 text-sm">
           <div className="flex gap-1">
@@ -21,10 +21,12 @@ export default async function NavBar({
                 <Link href="/overview">Overview</Link>
               </li>
               <li className={isActive("collection")}>
-                <Link href="/collection">Inventory</Link>
+                {/* <Link href="/collection">Collection</Link> */}
+                Collection
               </li>
               <li className={isActive("exploration")}>
-                <Link href="/exploration">Exploration</Link>
+                {/* <Link href="/exploration">Exploration</Link> */}
+                Exploration
               </li>
             </ul>
           </div>
