@@ -1,6 +1,6 @@
 import "@/app/globals.css";
 
-import SectionTitle from "@/components/SectionTitle";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 export default async function Overview() {
   return (
