@@ -142,8 +142,8 @@ export default async function Overview() {
               Null Hypothesis
             </p>
             <p className="text-2xl text-center w-[500px]">
-              There is no significant correlation between the economic status,
-              frequency of live births, and the preferred delivery method of
+              Economic status has no significant effect on the frequency of live
+              births per unit of population and the preferred delivery method of
               mothers.
             </p>
           </div>
@@ -152,8 +152,8 @@ export default async function Overview() {
               Alternative Hypothesis
             </p>
             <p className="text-2xl text-center w-[500px]">
-              Economic status has a significant effect on the frequency of live
-              births per unit of population and the preferred delivery method of
+              There is a significant correlation between the economic status,
+              frequency of live births, and the preferred delivery method of
               mothers.
             </p>
           </div>
