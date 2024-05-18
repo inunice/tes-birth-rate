@@ -3,6 +3,7 @@ import NavigationBar from "@/components/NavigationBar";
 import Header from "@/components/Header";
 import Overview from "@/components/Overview";
 import Collection from "@/components/Collection";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Overview />
       <Collection />
+      <Team />
     </div>
   );
 }
