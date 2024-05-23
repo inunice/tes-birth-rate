@@ -2,9 +2,18 @@ import "@/app/globals.css";
 
 export default async function Header() {
   return (
-    <div className="w-3/5 my-[200px] flex flex-row items-center justify-center gap-1">
+    <div className="w-7/12 my-[200px] flex flex-row items-center justify-center gap-[1px]">
       <div className="flex-1">
-        <p className="text-[70px]">Poverty & Parenting</p>
+        <span
+          className="font-semibold 
+            bg-gradient-to-r bg-clip-text text-transparent 
+            from-naples-yellow via-bittersweet to-teal
+            animate-text font-urbanist text-[100px] leading-[100px]
+            "
+        >
+          poverty & <br />
+          parenting.
+        </span>{" "}
       </div>
       <div className="flex-1">
         <h1 className="text-[60px] font-urbanist tracking-tight">

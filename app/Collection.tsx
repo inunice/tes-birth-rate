@@ -9,6 +9,7 @@ export default async function Overview() {
       <div className="my-[200px] flex flex-col items-center justify-center gap-10">
         <SectionTitle title="Collection" />
         <div>
+          <p></p>
           <Button
             name="View our repository here!"
             link="https://github.com/inunice/tes-birth-rate"
