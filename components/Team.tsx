@@ -46,7 +46,10 @@ export default async function Team() {
             Heya! I'm Jose, a second year Computer Science student from UP Diliman. I am interested in project management and software development.
           </p>
           <p className="mt-3">
-            I spend most of my time away from the keyboard, consuming non-tech related passions such as fashion, fitness, and basketball. Though more recently, I have been taking active interest in data science, figuring things out on my own and visualizing results. I look forward to learning more about tech as I progress in my stint in this course.
+            I spend most of my time away from the keyboard, consuming non-tech related passions such as fashion, fitness, and basketball. Though more recently, I have been taking active interest in data science, figuring things out on my own and visualizing results.
+          </p>
+          <p className="mt-3">
+            I look forward to learning more about tech as I progress in my stint in this course.
           </p>
           <div>
             <div className="flex flex-row gap-2 items-center mt-6">
