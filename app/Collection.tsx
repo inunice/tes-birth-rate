@@ -26,6 +26,5 @@ export default async function Overview() {
         </a>
       </div>
     </div>
-    
-  );  
+  );
 }

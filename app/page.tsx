@@ -1,26 +1,42 @@
 import Image from "next/image";
 import NavigationBar from "@/components/NavigationBar";
-import Header from "@/components/Header";
-import Overview from "@/components/Overview";
-import Collection from "@/components/Collection";
-import Exploration from "@/components/Exploration";
-import Modeling from "@/components/Modeling";
-import Results from "@/components/Results";
-import Conclusion from "@/components/Conclusion";
-import Team from "@/components/Team";
+import Header from "@/app/Header";
+import Overview from "@/app/Overview";
+import Collection from "@/app/Collection";
+import Exploration from "@/app/Exploration";
+import Modeling from "@/app/Modeling";
+import Results from "@/app/results";
+import Conclusion from "@/app/Conclusion";
+import Team from "@/app/Team";
 
 export default function Home() {
   return (
     <div>
-      <NavigationBar currentActive={"overview"} />
-      <Header />
-      <Overview />
-      <Collection />
-      <Exploration />
-      <Modeling />
-      <Results />
-      <Conclusion />
-      <Team />
+      <NavigationBar />
+      <div id="top">
+        <Header />
+      </div>
+      <div id="overview">
+        <Overview />
+      </div>
+      <div id="collection">
+        <Collection />
+      </div>
+      <div id="exploration">
+        <Exploration />
+      </div>
+      <div id="modeling">
+        <Modeling />
+      </div>
+      <div id="results">
+        <Results />
+      </div>
+      <div id="conclusion">
+        <Conclusion />
+      </div>
+      <div id="team">
+        <Team />
+      </div>
     </div>
   );
 }
