@@ -29,9 +29,9 @@ export default async function Header() {
           </span>
           !
         </h1>
-        <p className="text-lg">
+        <p className="text-lg leading-snug">
           This is our project,{" "}
-          <span className="font-semibold font-urbanist">
+          <span className="font-semibold">
             Poverty and Parenting: Economic Analysis of Birth Rates in the
             Philippines
           </span>
@@ -44,25 +44,17 @@ export default async function Header() {
         </p>
         <div className="flex gap-2 mt-[50px] justify-end">
           <div className="px-3 py-1 bg-english-violet rounded-lg">
-            <span className="opacity-60 font-urbanist font-bold text-white">
-              WFV Spring
-            </span>
+            <span className="opacity-60 text-white">WFV Spring</span>
           </div>
           <div className="px-3 py-1 bg-teal rounded-lg">
-            <span className="opacity-60 font-urbanist font-bold">
-              Ayen Manguan
-            </span>
+            <span className="opacity-60 font-bold">Ayen Manguan</span>
           </div>
 
           <div className="px-3 py-1 bg-bittersweet rounded-lg">
-            <span className="opacity-60 font-urbanist font-bold">
-              Elijah Mejilla
-            </span>
+            <span className="opacity-60 font-bold">Elijah Mejilla</span>
           </div>
           <div className="px-3 py-1 bg-naples-yellow rounded-lg">
-            <span className="opacity-60 font-urbanist font-bold">
-              Jose Tomanan
-            </span>
+            <span className="opacity-60 font-bold">Jose Tomanan</span>
           </div>
         </div>
       </div>
