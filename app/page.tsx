@@ -9,34 +9,26 @@ import Results from "@/app/results";
 import Conclusion from "@/app/Conclusion";
 import Team from "@/app/Team";
 
+const components = [
+  { id: "top", Component: Header },
+  { id: "overview", Component: Overview },
+  { id: "collection", Component: Collection },
+  { id: "exploration", Component: Exploration },
+  { id: "modeling", Component: Modeling },
+  { id: "results", Component: Results },
+  { id: "conclusion", Component: Conclusion },
+  { id: "team", Component: Team },
+];
+
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       <NavigationBar />
-      <div id="top">
-        <Header />
-      </div>
-      <div id="overview">
-        <Overview />
-      </div>
-      <div id="collection">
-        <Collection />
-      </div>
-      <div id="exploration">
-        <Exploration />
-      </div>
-      <div id="modeling">
-        <Modeling />
-      </div>
-      <div id="results">
-        <Results />
-      </div>
-      <div id="conclusion">
-        <Conclusion />
-      </div>
-      <div id="team">
-        <Team />
-      </div>
+      {components.map(({ id, Component }) => (
+        <div key={id} id={id} className="w-full flex justify-center">
+          <Component />
+        </div>
+      ))}
     </div>
   );
 }
