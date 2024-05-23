@@ -7,9 +7,10 @@ export default async function Overview() {
   return (
     <div className="my-[200px] flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Collection" />
-      <a className="text-teal" href="https://github.com/inunice/tes-birth-rate">
-        View our repository here!
-      </a>
+      <Button
+        name="View our repository here!"
+        link="https://github.com/inunice/tes-birth-rate"
+      />
       <a
         className="text-teal"
         href="https://docs.google.com/document/d/1enEdHeMk50b3VRlD1AZu_6Ux9ikRHa7WwSGKE8lVFJM/edit?usp=sharing"
