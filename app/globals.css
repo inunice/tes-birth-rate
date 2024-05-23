@@ -28,3 +28,11 @@
     color: #5AC3B0;
     word-spacing: 15px;
   }
+
+  .btn-generic {
+    @apply bg-naples-yellow text-black/60 font-bold py-2 px-4 rounded transition-all duration-200;
+  }
+
+  .btn-generic:hover {
+    @apply bg-naples-yellow bg-opacity-50;
+  }
