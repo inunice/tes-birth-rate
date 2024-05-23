@@ -19,7 +19,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="bg-white opacity-90 sticky top-0 flex h-24 w-full flex-col justify-center items-center border-b border-teal">
+    <nav className="bg-white opacity-90 sticky top-0 flex h-24 w-full flex-col justify-center items-center border-b border-naples-yellow">
       <div className="flex flex-row justify-center">
         <div className="flex w-full max-w-4xl items-center justify-between p-3 text-sm">
           <div className="flex gap-1">
