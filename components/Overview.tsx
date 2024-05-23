@@ -90,9 +90,12 @@ export default async function Overview() {
           </div>
           <p className="text-lg text-center w-[500px]">
             Using data science, we intend on analyzing economic indicators,
-            geographical data, and maternal preferences to explore their
-            combined impact on birth rates in the Philippines and promote family
-            planning in highly impacted areas.
+            geographical data, and maternal preferences{" "}
+            <span className="italic">
+              (do rural municipalities prefer traditional methods?)
+            </span>{" "}
+            to explore their combined impact on birth rates in the Philippines
+            and promote family planning in highly impacted areas.
           </p>
         </div>
       </div>
@@ -139,7 +142,7 @@ export default async function Overview() {
               Null Hypothesis
             </p>
             <p className="text-2xl text-center w-[500px]">
-              Economic status has a significant effect on the frequency of live
+              Economic status has no significant effect on the frequency of live
               births per unit of population and the preferred delivery method of
               mothers.
             </p>
@@ -149,7 +152,7 @@ export default async function Overview() {
               Alternative Hypothesis
             </p>
             <p className="text-2xl text-center w-[500px]">
-              There is no significant correlation between the economic status,
+              There is a significant correlation between the economic status,
               frequency of live births, and the preferred delivery method of
               mothers.
             </p>
