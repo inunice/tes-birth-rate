@@ -4,7 +4,7 @@ export default async function SectionTitle({ title }: { title: string }) {
   const titleMult = (title + " ").repeat(15);
   return (
     <span
-      className="w-full border-text my-20 mt-[120px]"
+      className="w-full border-text mt-[120px] mb-[30px]"
       data-content={titleMult}
     ></span>
   );
