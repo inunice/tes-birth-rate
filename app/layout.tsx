@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { PT_Sans, Urbanist } from "next/font/google";
+import { PT_Sans, Urbanist, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const pt_sans = PT_Sans({
+const dm_sans = DM_Sans({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-pt_sans",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${pt_sans.variable} ${urbanist.variable}`}>
+      <body className={`${dm_sans.variable} ${urbanist.variable}`}>
         {children}
       </body>
     </html>
