@@ -32,7 +32,7 @@ export default function Overview() {
             <p className="text-xl font-bold text-bittersweet">Sample Size</p>
             <p>
               A total of <span className="underline">1634 municipalities</span>{" "}
-              were recorded in the datasheet across the three datasets.
+              were recorded in the datasheet for all three datasets.
             </p>
           </div>
           <div className="flex flex-col gap-2">
