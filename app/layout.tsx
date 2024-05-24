@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PT_Sans, Urbanist, DM_Sans } from "next/font/google";
+import { Urbanist, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const dm_sans = DM_Sans({
