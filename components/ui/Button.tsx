@@ -3,11 +3,12 @@ import "@/app/globals.css";
 interface ButtonProps {
   name: string;
   link: string;
+  className?: string;
 }
 
-export default async function Button({ name, link }: ButtonProps) {
+export default function Button({ name, link, className = "" }: ButtonProps) {
   return (
-    <a href={link} className="btn btn-generic">
+    <a href={link} className={`btn btn-generic self-start ${className}`}>
       {name}
     </a>
   );
