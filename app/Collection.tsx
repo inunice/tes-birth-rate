@@ -7,8 +7,8 @@ export default function Overview() {
   return (
     <div className="w-7/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Collection" />
-      <div className="flex flex-row gap-20 items-start justify-center">
-        <div className="flex flex-col gap-6 w-1/2 mx-auto">
+      <div className="flex flex-col sm:flex-row gap-20 items-start justify-center">
+        <div className="flex flex-col gap-6 flex-1 mx-auto">
           <div className="flex flex-col gap-3">
             <p className="text-3xl font-urbanist leading-tight">
               For this project, we obtained and collected three datasets.
@@ -53,7 +53,7 @@ export default function Overview() {
             link="https://docs.google.com/spreadsheets/d/1j9uQo2hCOgayA5jhMOKJbQdUSRkZVAmo/edit#gid=1996489956"
           />
         </div>
-        <div className="flex flex-col gap-3 w-1/2 mx-auto">
+        <div className="flex flex-col gap-3 flex-1 mx-auto">
           <p className="text-xl font-bold text-bittersweet">
             Datasets from PSA
           </p>
