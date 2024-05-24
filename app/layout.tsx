@@ -10,7 +10,7 @@ const dm_sans = DM_Sans({
 const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-urbanist" });
 
 export const metadata: Metadata = {
-  title: "Mother!",
+  title: "Poverty and Parenting",
   description: "CS 132 Data Science Project",
 };
 
