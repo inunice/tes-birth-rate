@@ -3,6 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
 import ExplorationHeader from "@/components/ui/ExplorationHeader";
 import ExplorationItem from "@/components/ui/ExplorationItem";
+import Image from "next/image";
 
 export default async function Exploration() {
   return (
@@ -37,7 +38,51 @@ export default async function Exploration() {
       <ExplorationItem
         title="Cleaning Population Dataset"
         description="Much like the live births dataset, string representations of number values (due to commas) were converted. With this, the dataset is now ready for merging."
+      /> 
+      <div className="flex flex-row justify-between gap-10 items-between flex-wrap">
+      <p className="text-2xl font-urbanist leading-tight">
+          And there we go, our data has been cleaned!
+      </p>
+      <Button
+          className="whitespace-nowrap"
+          name="Take a look at our dataset! [WIP]"
+          link="https://colab.research.google.com/drive/1yBrVKPBKlfGQR4bbGP-N8Q9ZNd9hW0yD?usp=sharing"
       />
+      <ExplorationHeader
+        title="Nutshell Plot" 
+        description="From here, we try to extrapolate patterns within our data; we then visualize our results to try and see if they correspond with any of our hypotheses."
+      />
+      <ExplorationItem 
+        title="Geospatial Mapping"
+        description="Since we want to gain an understanding of how poverty incidence and birth rate affect 
+                    different areas of the Philippines, then one option would be to plot our data geospatially  
+                    using colors, across different provinces in the country. This would help us gain an intuitive understanding 
+                    of how these variables correlate and interact with one another "
+      /> 
+      <ExplorationItem 
+        title="2D colormap"
+        description="In order to represent both poverty incidence and birth rate in the Philippine map, we need a way to represent two variables using color. Our solution: we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
+      /> 
+
+      <div className="w-full flex items-center justify-center">
+        <Image
+          src={"/plots/nutshell-legend.png"}
+          width={700}
+          height={700}
+        />
+          
+      </div>
+
+      
+      <ExplorationItem 
+        title=""
+        description=""
+      /> 
+      <ExplorationItem 
+        title=""
+        description=""
+      /> 
+      </div>  
     </div>
   );
 }
