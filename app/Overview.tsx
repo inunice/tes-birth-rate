@@ -164,7 +164,7 @@ export default async function Overview() {
           Our plan of action!
         </p>
         <p className="text-lg text-center">
-          We will collate statistical datasets from the Philippine Statistics
+          We collated statistical datasets from the Philippine Statistics
           Authority (PSA) on live births and poverty rates for each municipality
           in the Philippines and use tools from statistics and machine learning
           to come up with conclusions that paint the relationships between these
