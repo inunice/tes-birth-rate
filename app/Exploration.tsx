@@ -8,6 +8,16 @@ export default async function Exploration() {
   return (
     <div className="w-7/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Exploration" />
+      <div className="flex flex-row justify-between gap-6 items-center flex-wrap">
+        <p className="text-2xl font-urbanist leading-tight">
+          Exploring our data is the first step to understanding it better!
+        </p>
+        <Button
+          className="whitespace-nowrap"
+          name="Take a look at our full exploration tour!"
+          link="https://colab.research.google.com/drive/1yBrVKPBKlfGQR4bbGP-N8Q9ZNd9hW0yD?usp=sharing"
+        />
+      </div>
       <ExplorationHeader
         title="Data preprocesing"
         description="We first preprocess our data and ensure that it is clean, standardized, and ready for analysis! We try to make a few fields uniform across all datasets so that we can merge them into one. Having all our datasets collated into one dataframe is necessary for data analysis."
@@ -24,11 +34,9 @@ export default async function Exploration() {
         title="Cleaning Population Dataset"
         description="Much like the live births dataset, string representations of number values (due to commas) were converted. With this, the dataset is now ready for merging."
       />
-
-      <Button
-        className="ml-auto"
-        name="Take a look at our full exploration tour!"
-        link="https://colab.research.google.com/drive/1yBrVKPBKlfGQR4bbGP-N8Q9ZNd9hW0yD?usp=sharing"
+      <ExplorationItem
+        title="Cleaning Population Dataset"
+        description="Much like the live births dataset, string representations of number values (due to commas) were converted. With this, the dataset is now ready for merging."
       />
     </div>
   );
