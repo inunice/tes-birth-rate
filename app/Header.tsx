@@ -2,7 +2,7 @@ import "@/app/globals.css";
 
 export default async function Header() {
   return (
-    <div className="w-7/12 my-[200px] flex flex-row items-center justify-center gap-[1px]">
+    <div className="w-8/12 my-[200px] flex flex-row items-center justify-center gap-[1px]">
       <div className="flex-1">
         <span
           className="font-semibold 

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default async function Exploration() {
   return (
-    <div className="w-7/12 flex flex-col items-center justify-center gap-10">
+    <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Exploration" />
       <div className="flex flex-col justify-center items-center gap-4">
         <p className="text-2xl font-urbanist leading-tight">
@@ -46,7 +46,7 @@ export default async function Exploration() {
         description="After ensuring all locations are matched, we merge the three datasets into one dataframe with 1634 rows (no data loss)!. The dataframe has information on location (region, province, municipality), poverty incidence, total population, total births, and delivery methods."
       />
 
-      <div className="h-0.5 w-7/12 bg-teal my-2 mt-4">&nbsp;</div>
+      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
       <ExplorationHeader
         title="Exploring Data"
@@ -63,7 +63,7 @@ export default async function Exploration() {
         imagePath="/plots/eda-2.png"
       />
 
-      <div className="h-0.5 w-7/12 bg-teal my-2 mt-4">&nbsp;</div>
+      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
       <ExplorationHeader title="Question 1" description="Text" />
       <ExplorationItem
@@ -99,7 +99,7 @@ export default async function Exploration() {
         </p>
       </div>
 
-      <div className="h-0.5 w-7/12 bg-teal my-2 mt-4">&nbsp;</div>
+      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
       <ExplorationHeader
         title="Question 2: Child Delivery Methods"
@@ -162,7 +162,7 @@ export default async function Exploration() {
         </p>
       </div>
 
-      <div className="h-0.5 w-7/12 bg-teal my-2 mt-4">&nbsp;</div>
+      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
     </div>
   );
 }

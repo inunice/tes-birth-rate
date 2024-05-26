@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 
 export default function Overview() {
   return (
-    <div className="w-7/12 flex flex-col items-center justify-center gap-10">
+    <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Collection" />
       <div className="flex flex-col sm:flex-row gap-20 items-start justify-center">
         <div className="flex flex-col gap-6 flex-1 mx-auto">
