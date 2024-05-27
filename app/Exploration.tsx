@@ -65,7 +65,22 @@ export default async function Exploration() {
 
       <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
-      <ExplorationHeader title="Question 1" description="Text" />
+      <ExplorationHeader title="Question 1" description="
+        How does economic status affect the frequency of live births per unit of population?
+        While being of lower economic status should logically result in having a lower birth rate to compensate for the family's lack of purchasing power, this family decision can be hindered by one's lack of access to education.
+        So we can ask: are less economically advanced areas more conscious of having children?
+        Or is it the other way around?
+        Is financial status a factor in family planning in Filipino families in the first place?
+        The answers to these questions will be visualized through the following joint plots.
+      " />
+      <ExplorationItem
+        title="Preprocessing"
+        description="
+          First, we take the previous scatter plot we made it, then differentiate each region by assigning a color.
+          To do so, we create a duplicate of the merged dataframe, suit it for this particular analysis by dropping unused columns, then run the dataframe through a joint plot.
+          Along with this, we also rename each region so they can be more easily readable in the plot legend, as will be seen later.
+        "
+      />
       <ExplorationItem
         title="Dunno"
         description="Lorem."
