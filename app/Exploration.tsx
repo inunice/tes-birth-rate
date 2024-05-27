@@ -156,37 +156,68 @@ export default async function Exploration() {
 
       <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
-      <ExplorationHeader title="Question 1" description="Text" />
+      <ExplorationHeader title="Question 1" description="
+        How does economic status affect the frequency of live births per unit of population?
+        While being of lower economic status should logically result in having a lower birth rate to compensate for the family's lack of purchasing power, this family decision can be hindered by one's lack of access to education.
+        So we ask: are less economically advanced areas more conscious of having children?
+        Or is it the other way around?
+        Is financial status a factor in family planning in Filipino families in the first place?
+        The answers to these questions will be visualized through the following joint plots.
+      " />
       <ExplorationItem
-        title="Dunno"
-        description="Lorem."
+        title="Preprocessing"
+        description="
+          First, we take the previous scatter plot we made it, then differentiate each region by assigning a color.
+          To do so, we create a duplicate of the merged dataframe, suit it for this particular analysis by dropping unused columns, then run the dataframe through a joint plot.
+          Along with this, we also rename each region so they can be more easily readable in the plot legend, as will be seen later.
+        "
+      />
+      <ExplorationItem
+        title="Poverty Incidence vs Birth Rate, by Region"
+        description="
+          Improving on the scatter plot produces the following joint plot.
+          From the image, one can observe that the birth rates of most Philippine municipalities cluster around the 1.0 to 1.5 births per capita range, and the poverty incidence mostly ranges from 0 to 40.
+          Basic statistical testing using Pearson correlation coefficients gives values of p = 0.212 and r = -0.03, which shows an insignificant relationship between the two variables.
+          However, we can improve this visualization further by grouping the municipalities according to the province they belong in.
+        "
         imagePath="/plots/q1-1.png"
       />
       <ExplorationItem
-        title="Ipsum"
-        description="Dorothy"
+        title="Aggregating per province"
+        description="
+          Using the number of municipalities in a province as the variable size of each marker, we are now able to better visualize the results above!
+          From this figure, it is also more readily apparent that the BARMM region is an outlier, being away from the main cluster of datapoints.
+          This can be attributed to the political instability and struggles in economic development in the Bangsamoro region, being only officially declared in 2018 and still constantly facing armed conflict in its short lifetime.
+          This results in high poverty incidence in the region regardless of birth rate.
+        "
         imagePath="/plots/q1-2.png"
+      />
+
+      <ExplorationItem
+        title="Removing BARMM as a region"
+        description="
+          As a matter of fact, if we omit this region from our computation, the plot would look a lot simpler.
+          Testing this using Pearson correlation coefficient, this would yield p = 1.64e-17 and r = 0.216, implying a strong significant correlation.
+          This gives us the insight that outside of BARMM's economic and political issues, the trend in the Philippines is that increasing povery incidence comes with increasing birth rate.
+          This can be attributed to the country's poor sex education, which results in a lack of family planning in poorer Philippine areas.
+        "
+        imagePath="/plots/q1-3.png"
       />
 
       <div className="flex flex-col justify-center items-center gap-4 w-3/4">
         <p className="text-2xl font-urbanist leading-tight text-center">
-          Question 1 conclu
+          Question 1:
+          How does economic status affect the frequency of live births per unit of population?
         </p>
         <p className="text-center">
-          From the analysis, location and economic status{" "}
+          Economic status and birth rate{" "}
           <strong>
-            does somewhat influence the preference on child delivery methods of
-            mothers
+            are strongly and significantly correlated but only when BARMM is excluded, i.e. the 
+            relationship is not significant otherwise
           </strong>
-          . For location, despite the trend towards professional healthcare,
-          there still exists a significant number of Filipinos who opt for
-          traditional birth attendants, especially in regions with lower
-          economic status. Logistic regression also reveals that as poverty
-          incidence increases, the odds of opting for a health professional
-          during childbirth decreases. This preference may be influenced by
-          factors such as accessibility to professional healthcare and cultural
-          beliefs; further qualitative research can help us understand the
-          complex dynamics of childbirth choices in the Philippines!
+          .
+          This can be attributed to a variety of factors, including poor education quality and poor public awareness about safety in sex.
+          However, while this takeaway is useful insight for analyzing the current status of the nation, it is still important to realize that it is not proper to exclude any Philippine region out of the narrative, regardless of how problematic the region may be.
         </p>
       </div>
 
