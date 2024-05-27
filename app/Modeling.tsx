@@ -5,6 +5,7 @@ export default async function Modeling() {
   return (
     <div className="flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Modeling" />
+      WIP
     </div>
   );
 }

@@ -5,6 +5,7 @@ export default function Results() {
   return (
     <div className="flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Results" />
+      WIP
     </div>
   );
 }
