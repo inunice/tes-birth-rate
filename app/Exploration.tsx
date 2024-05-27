@@ -38,29 +38,6 @@ export default async function Exploration() {
         description="Much like the live births dataset, string representations of number values (due to commas) were converted. With this, the dataset is now ready for merging."
       />
       <ExplorationItem
-        title="Cleaning Population Dataset"
-        description="Much like the live births dataset, string representations of number values (due to commas) were converted. With this, the dataset is now ready for merging."
-      /> 
-      <div className="flex flex-row justify-between gap-10 items-between flex-wrap">
-      <p className="text-2xl font-urbanist leading-tight">
-          And there we go, our data has been cleaned!
-      </p>
-      <Button
-          className="whitespace-nowrap"
-          name="Take a look at our dataset! [WIP]"
-          link="https://colab.research.google.com/drive/1yBrVKPBKlfGQR4bbGP-N8Q9ZNd9hW0yD?usp=sharing"
-      />
-      </div>  
-
-      <ExplorationHeader
-        title="Nutshell Plot" 
-        description="
-          From here, we try to extrapolate patterns within our data. We then visualize our results to see if they correspond with any of our hypotheses.
-          We first merge all three datasets that we've obtained.
-        "
-      />
-      
-      <ExplorationItem
         title="Matching Location Names"
         description="
           Our key in merging the three datasets is the 'Province' and 'Municipality'. To match them, we remove information inside parentheses. They usually include additional information like '(Capital)'. We also set both columns to title case. Next, we check for any location that does not match between the datasets and manually correct them. These cases are usually due to different spellings (Pinamungahan, Pinamungajan), mispelled words (San Idelfonso, San Ildefonso), different conventions (City Of Carmona, Carmona), or old names (Bumbaran, Amai Manabilang).
@@ -71,164 +48,17 @@ export default async function Exploration() {
         description="
           After ensuring all locations are matched, we merge the three datasets into one dataframe with 1634 rows (no data loss!). The dataframe has information on location (region, province, municipality), poverty incidence, total population, total births, and delivery methods.
         "
-      /> 
-      
-      <ExplorationItem 
-        title="Geospatial Mapping"
-        description="
-          Now how poverty incidence and birth rate affect 
-          different areas of the Philippines, then one option would be to plot our data geospatially  
-          using colors, across different provinces in the country. This would help us gain an intuitive understanding 
-          of how these variables correlate and interact with one another.
-        "
-      /> 
-
-      <ExplorationItem 
-        title="Individual plots"
-        description="
-          We first plot the maps of each of both poverty incidence and birth rate individually using GeoPandas.
-        "
-      />  
-
-      <div className="w w-full flex items-center justify-between">
-        <Image
-          src={"/plots/nutshell-poverty.png"}
-          width={450}
-          height={450}
-        />
-        <Image
-          src={"/plots/nutshell-birth.png"}
-          width={400}
-          height={400}
-        />
-
+      />
+      <div className="flex flex-row justify-between gap-10 items-between flex-wrap">
+        <p className="text-2xl font-urbanist leading-tight">
+          And there we go, our data has been cleaned!
+        </p>
       </div>
-      
-      <ExplorationItem 
-        title="2D colormap"
-        description="Now, the challenge is to represent both poverty incidence and birth rate in the
-         Philippine map. To do this, we would need a way to represent two variables using color. Our solution: we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
-      /> 
-
-      <div className="w-full flex items-center justify-center"> 
-        <Image
-          src={"/plots/nutshell-legend.png"}
-          width={700}
-          height={700}
-        />
-      </div>
-
-
-
-      <ExplorationItem 
-        title="Mapping values"
-        description="We then use correspond each region to a corresponding birth rate and poverty incidence values, then correspond those values to a color."
-      />  
-
-      <ExplorationItem 
-        title="Plotting"
-        description="And now, all that's left to do is plot the map." 
-      /> 
-
-      <div className="w-full flex items-center justify-center">
-        <Image
-          src={"/plots/nutshell.png"}
-          width={400}
-          height={400}
-        />
-      </div>
-
-      <ExplorationItem
-        title="Final Plot"
-        description="Putting it all together, we have: [AYEN can u put the graph u made here ty]"
-      />
-
-      <ExplorationItem
-        title="Analysis"
-        description="
-          Using the extremes of both axes, we determine four colors at each of the corners. There's blue which corresponds to low poverty incidence and low birth rate;  purple which signifies low poverty incidence and high birth rate; green which shows high poverty incidence; and yellow which shows high poverty incidence and high birth rate.
-          "
-        // There are two main hypotheses on how poverty incidence can affect birth rates.
-        
-        // The first hypothesis is that the poorer a region is, then the less access they would have to proper birth control and family planning knowledge--this would lead to poorer areas having higher birth rates. The second guess is that if the region is poorer, then their birth rates would be lower because they would be less capable of financially supporting children. 
-        
-        // From the leftmost graph showing only poverty incidence, we see that more northern areas (i.e., Luzon) tend to have a lower poverty incidence, while more southern areas (i.e., Mindanao) generally have a higher poverty incidence. This observation will help us in our analysis.
-        
-        // We see that in the main graph, areas in luzon tend to range from purple to indigo. This means that these areas tend to have both low poverty incidence and high birth rates.
-        
-        // In the Visayan areas, we see different areas range from purple to orange; this suggests that there exists moderate-to-high birthrates regardless of the poverty incidence within an area.
-        
-        // Finally, we observe that Mindanao has the greatest variation. However, while there are areas that are colored blue/green (indicating low birth rates), majority of the areas range from the purple to orange spectrum. This indicates, once again, moderate-to-high birth rates regardless of poverty incidence
-        
-        // One possible reason for the greener areas is that more farflung areas may have less access to healthcare, and in turn, the facilities needed to record births. 
-        
-        // On a baseline, we can make an interpretation that the birth rate of a region is relatively consistent, regardless of its corresponding poverty incidence.
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          There are two main hypotheses on how poverty incidence can affect birth rates.
-        "
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          The first hypothesis is that the poorer a region is, then the less access they would have to proper birth control and family planning knowledge--this would lead to poorer areas having higher birth rates. The second guess is that if the region is poorer, then their birth rates would be lower because they would be less capable of financially supporting children. 
-        "
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          From the leftmost graph showing only poverty incidence, we see that more northern areas (i.e., Luzon) tend to have a lower poverty incidence, while more southern areas (i.e., Mindanao) generally have a higher poverty incidence. This observation will help us in our analysis.
-        "
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          We see that in the main graph, areas in luzon tend to range from purple to indigo. This means that these areas tend to have both low poverty incidence and high birth rates.
-        "
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          In the Visayan areas, we see different areas range from purple to orange; this suggests that there exists moderate-to-high birthrates regardless of the poverty incidence within an area.
-        "
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          Finally, we observe that Mindanao has the greatest variation. However, while there are areas that are colored blue/green (indicating low birth rates), majority of the areas range from the purple to orange spectrum. This indicates, once again, moderate-to-high birth rates regardless of poverty incidence
-        "
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          One possible reason for the greener areas is that more farflung areas may have less access to healthcare, and in turn, the facilities needed to record births. 
-        "
-      />
-
-      <ExplorationItem
-        title="."
-        description="
-          On a baseline, we can make an interpretation that the birth rate of a region is relatively consistent, regardless of its corresponding poverty incidence.
-        "
-      />
-
-      
-
-      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
       <ExplorationHeader
         title="Exploring Data"
         description="We now look at the distribution of our data, check for any outliers, and see if there are any significant relationships between our variables."
-      /> 
+      />
       <ExplorationItem
         title="Birth Rate Distribution"
         description="After calculating the birth rate from the birth count and total population, we can plot it per region. Without considering outliers, the highest municipal birth rate is 1.75% (found in MIMAROPA) , while the lowest is 0.65% (found in BARMM). 
@@ -242,16 +72,17 @@ export default async function Exploration() {
         imagePath="/plots/eda-2.png"
       />
 
-      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
-
-      <ExplorationHeader title="Question 1" description="
+      <ExplorationHeader
+        title="Question 1: Live births and Economic Status"
+        description="
         How does economic status affect the frequency of live births per unit of population?
         While being of lower economic status should logically result in having a lower birth rate to compensate for the family's lack of purchasing power, this family decision can be hindered by one's lack of access to education.
         So we ask: are less economically advanced areas more conscious of having children?
         Or is it the other way around?
         Is financial status a factor in family planning in Filipino families in the first place?
         The answers to these questions will be visualized through the following joint plots.
-      " />
+      "
+      />
       <ExplorationItem
         title="Preprocessing"
         description="
@@ -294,22 +125,23 @@ export default async function Exploration() {
 
       <div className="flex flex-col justify-center items-center gap-4 w-3/4">
         <p className="text-2xl font-urbanist leading-tight text-center">
-          Question 1:
-          How does economic status affect the frequency of live births per unit of population?
+          Question 1: How does economic status affect the frequency of live
+          births per unit of population?
         </p>
         <p className="text-center">
           Economic status and birth rate{" "}
           <strong>
-            are strongly and significantly correlated but only when BARMM is excluded, i.e. the 
-            relationship is not significant otherwise
+            are strongly and significantly correlated but only when BARMM is
+            excluded, i.e. the relationship is not significant otherwise
           </strong>
-          .
-          This can be attributed to a variety of factors, including poor education quality and poor public awareness about safety in sex.
-          However, while this takeaway is useful insight for analyzing the current status of the nation, it is still important to realize that it is not proper to exclude any Philippine region out of the narrative, regardless of how problematic the region may be.
+          . This can be attributed to a variety of factors, including poor
+          education quality and poor public awareness about safety in sex.
+          However, while this takeaway is useful insight for analyzing the
+          current status of the nation, it is still important to realize that it
+          is not proper to exclude any Philippine region out of the narrative,
+          regardless of how problematic the region may be.
         </p>
       </div>
-
-      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
       <ExplorationHeader
         title="Question 2: Child Delivery Methods"
@@ -345,7 +177,7 @@ export default async function Exploration() {
 
       <ExplorationItem
         title="Hypothesis Testing"
-        description="Now, we check if there is a correlation between birth delivery methods and poverty incidence using logistic regression. Since it is binary, our two outcomes will be if it was delivered by a health professional or not. We use poverty incidence as the independent variable and `Count` as weight of our model. Based on the results, there is a <strong>statistically significant correlation between poverty incidence and the likelihood of having a health professional in childbirth</strong>. Since the coefficient for poverty incidence is negative (-0.0037) and the p-values < 0, we can conclude that as poverty incidence increases, the odds of a health professional childbirth decreases!
+        description="Now, we check if there is a correlation between birth delivery methods and poverty incidence using logistic regression. Since it is binary, our two outcomes will be if it was delivered by a health professional or not. We use poverty incidence as the independent variable and `Count` as weight of our model. Based on the results, there is a statistically significant correlation between poverty incidence and the likelihood of having a health professional in childbirth. Since the coefficient for poverty incidence is negative (-0.0037) and the p-values < 0, we can conclude that as poverty incidence increases, the odds of a health professional childbirth decreases!
         Although, the low R-squared value (0.35) can suggest that there are likely other factors, too."
       />
 
@@ -372,7 +204,137 @@ export default async function Exploration() {
         </p>
       </div>
 
-      <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
+      <ExplorationHeader
+        title="Nutshell Plot"
+        description="
+          From here, we try to extrapolate patterns within our data. We then visualize our results to see if they correspond with any of our hypotheses.
+          We first merge all three datasets that we've obtained.
+        "
+      />
+
+      <ExplorationItem
+        title="Geospatial Mapping"
+        description="
+          Now how poverty incidence and birth rate affect 
+          different areas of the Philippines, then one option would be to plot our data geospatially  
+          using colors, across different provinces in the country. This would help us gain an intuitive understanding 
+          of how these variables correlate and interact with one another.
+        "
+      />
+
+      <ExplorationItem
+        title="Individual plots"
+        description="
+          We first plot the maps of each of both poverty incidence and birth rate individually using GeoPandas.
+        "
+      />
+
+      <div className="w-full flex items-center justify-center gap-[50px]">
+        <Image src={"/plots/nutshell-poverty.png"} width={450} height={450} />
+        <Image src={"/plots/nutshell-birth.png"} width={400} height={400} />
+      </div>
+
+      <ExplorationItem
+        title="2D colormap"
+        description="Now, the challenge is to represent both poverty incidence and birth rate in the
+         Philippine map. To do this, we would need a way to represent two variables using color. Our solution: we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
+      />
+
+      <div className="w-full flex items-center justify-center">
+        <Image src={"/plots/nutshell-legend.png"} width={500} height={500} />
+      </div>
+
+      <ExplorationItem
+        title="Mapping values"
+        description="We then use correspond each region to a corresponding birth rate and poverty incidence values, then correspond those values to a color."
+      />
+
+      <ExplorationItem
+        title="Plotting"
+        description="And now, all that's left to do is plot the map."
+      />
+
+      <div className="w-full flex items-center justify-center">
+        <Image src={"/plots/nutshell.png"} width={400} height={400} />
+      </div>
+
+      <ExplorationItem
+        title="Final Plot"
+        description="Putting it all together, we have:"
+        imagePath={"/plots/nutshell-final.png"}
+      />
+
+      <div className="flex flex-col w-full">
+        <div className="flex flex-row justify-center gap-10 w-full">
+          <p className="text-xl font-bold text-bittersweet w-1/6 leading-tight">
+            Analysis
+          </p>
+          <div className="w-5/6 gap-3 flex flex-col">
+            <p className="leading-snug">
+              Using the extremes of both axes, we determine four colors at each
+              of the corners. There's blue which corresponds to low poverty
+              incidence and low birth rate; purple which signifies low poverty
+              incidence and high birth rate; green which shows high poverty
+              incidence; and yellow which shows high poverty incidence and high
+              birth rate.
+            </p>
+
+            <p className="leading-snug">
+              There are two main hypotheses on how poverty incidence can affect
+              birth rates.
+            </p>
+
+            <p className="leading-snug">
+              The first hypothesis is that the poorer a region is, then the less
+              access they would have to proper birth control and family planning
+              knowledge--this would lead to poorer areas having higher birth
+              rates. The second guess is that if the region is poorer, then
+              their birth rates would be lower because they would be less
+              capable of financially supporting children.{" "}
+            </p>
+
+            <p className="leading-snug">
+              From the leftmost graph showing only poverty incidence, we see
+              that more northern areas (i.e., Luzon) tend to have a lower
+              poverty incidence, while more southern areas (i.e., Mindanao)
+              generally have a higher poverty incidence. This observation will
+              help us in our analysis.
+            </p>
+
+            <p className="leading-snug">
+              We see that in the main graph, areas in luzon tend to range from
+              purple to indigo. This means that these areas tend to have both
+              low poverty incidence and high birth rates.
+            </p>
+
+            <p className="leading-snug">
+              In the Visayan areas, we see different areas range from purple to
+              orange; this suggests that there exists moderate-to-high
+              birthrates regardless of the poverty incidence within an area.
+            </p>
+
+            <p className="leading-snug">
+              Finally, we observe that Mindanao has the greatest variation.
+              However, while there are areas that are colored blue/green
+              (indicating low birth rates), majority of the areas range from the
+              purple to orange spectrum. This indicates, once again,
+              moderate-to-high birth rates regardless of poverty incidence
+            </p>
+
+            <p className="leading-snug">
+              One possible reason for the greener areas is that more farflung
+              areas may have less access to healthcare, and in turn, the
+              facilities needed to record births.{" "}
+            </p>
+
+            <p className="leading-snug">
+              On a baseline, we can make an interpretation that the birth rate
+              of a region is relatively consistent, regardless of its
+              corresponding poverty incidence.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
