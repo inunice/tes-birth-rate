@@ -84,8 +84,7 @@ export default async function Exploration() {
       <ExplorationItem 
         title="2D colormap"
         description="Now, the challenge is to represent both poverty incidence and birth rate in the
-         Philippine map. To do this, we would need a way to represent two variables using color. Our solution: 
-         we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
+         Philippine map. To do this, we would need a way to represent two variables using color. Our solution: we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
       /> 
 
       <div className="w-full flex items-center justify-center">
@@ -96,20 +95,36 @@ export default async function Exploration() {
         />
       </div>
 
+
+
       <ExplorationItem 
         title="Mapping values"
         description="We then use correspond each region to a corresponding birth rate and poverty incidence values, then correspond those values to a color."
       />  
 
-      
       <ExplorationItem 
         title="Plotting"
         description="And now, all that's left to do is plot the map." 
       /> 
-      <ExplorationItem 
-        title=""
-        description=""
-      /> 
+
+      <div className="w-full flex items-center justify-center">
+        <Image
+          src={"/plots/nutshell.png"}
+          width={400}
+          height={400}
+        />
+      </div>
+
+      <ExplorationItem
+        title="Final Plot"
+        description="Putting it all together, we have: [AYEN can u put the graph u made here ty]"
+      />
+
+      <ExplorationItem
+        title="Analysis"
+        description="We notice that:"
+      />
+
       </div>  
     </div>
   );
