@@ -68,7 +68,7 @@ export default async function Exploration() {
       <ExplorationHeader title="Question 1" description="
         How does economic status affect the frequency of live births per unit of population?
         While being of lower economic status should logically result in having a lower birth rate to compensate for the family's lack of purchasing power, this family decision can be hindered by one's lack of access to education.
-        So we can ask: are less economically advanced areas more conscious of having children?
+        So we ask: are less economically advanced areas more conscious of having children?
         Or is it the other way around?
         Is financial status a factor in family planning in Filipino families in the first place?
         The answers to these questions will be visualized through the following joint plots.
@@ -82,14 +82,29 @@ export default async function Exploration() {
         "
       />
       <ExplorationItem
-        title="Dunno"
-        description="Lorem."
+        title="Poverty Incidence vs Birth Rate, by Region"
+        description="
+          Improving on the scatter plot produces the following joint plot.
+          It is readily apparent that 
+          However, this is still cluttered and we can improve this visualization further by grouping the municipalities according to the province they belong in.
+          Afterward, we can use the number of municipalities in a province as a third parameter, which will be used by the marker size.
+        "
         imagePath="/plots/q1-1.png"
       />
       <ExplorationItem
-        title="Ipsum"
-        description="Dorothy"
+        title="Poverty Incidence vs Birth Rate, aggregated per province"
+        description="
+          As there are less data points, we are now able to better visualize the results above!
+          From this figure, it is also more readily apparent that the BARMM region is an outlier from the dataset, being away from the main cluster of datapoints.
+          This can be rationalized 
+        "
         imagePath="/plots/q1-2.png"
+      />
+
+      <ExplorationItem
+        title="Hey Dorothea"
+        description="Do you ever stop and think about me"
+        imagePath="/plots/q1-3.png"
       />
 
       <div className="flex flex-col justify-center items-center gap-4 w-3/4">
