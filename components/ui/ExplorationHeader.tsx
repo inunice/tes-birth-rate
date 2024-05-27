@@ -7,9 +7,9 @@ interface ButtonProps {
 
 export default function Button({ title, description }: ButtonProps) {
   return (
-    <div className="flex flex-row gap-10 items-start w-full">
+    <div className="flex flex-row gap-10 items-start w-full mt-8">
       <p className="text-3xl font-urbanist leading-tight w-3/12">{title}</p>
-      <p className="w-9/12">{description}</p>
+      <p className="w-9/12 leading-snug">{description}</p>
     </div>
   );
 }
