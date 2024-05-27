@@ -48,20 +48,44 @@ export default async function Exploration() {
           name="Take a look at our dataset! [WIP]"
           link="https://colab.research.google.com/drive/1yBrVKPBKlfGQR4bbGP-N8Q9ZNd9hW0yD?usp=sharing"
       />
+
       <ExplorationHeader
         title="Nutshell Plot" 
         description="From here, we try to extrapolate patterns within our data; we then visualize our results to try and see if they correspond with any of our hypotheses."
       />
+  
       <ExplorationItem 
         title="Geospatial Mapping"
-        description="Since we want to gain an understanding of how poverty incidence and birth rate affect 
+        description="Nowmhow poverty incidence and birth rate affect 
                     different areas of the Philippines, then one option would be to plot our data geospatially  
                     using colors, across different provinces in the country. This would help us gain an intuitive understanding 
                     of how these variables correlate and interact with one another "
       /> 
+
+      <ExplorationItem 
+        title="Individual plots"
+        description="We first plot the maps of each of both poverty incidence and birth rate individually using GeoPandas."
+      />  
+
+      <div className="w w-full flex items-center justify-between">
+        <Image
+          src={"/plots/nutshell-poverty.png"}
+          width={450}
+          height={450}
+        />
+        <Image
+          src={"/plots/nutshell-birth.png"}
+          width={400}
+          height={400}
+        />
+
+      </div>
+      
       <ExplorationItem 
         title="2D colormap"
-        description="In order to represent both poverty incidence and birth rate in the Philippine map, we need a way to represent two variables using color. Our solution: we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
+        description="Now, the challenge is to represent both poverty incidence and birth rate in the
+         Philippine map. To do this, we would need a way to represent two variables using color. Our solution: 
+         we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
       /> 
 
       <div className="w-full flex items-center justify-center">
@@ -70,13 +94,17 @@ export default async function Exploration() {
           width={700}
           height={700}
         />
-          
       </div>
+
+      <ExplorationItem 
+        title="Mapping values"
+        description="We then use correspond each region to a corresponding birth rate and poverty incidence values, then correspond those values to a color."
+      />  
 
       
       <ExplorationItem 
-        title=""
-        description=""
+        title="Plotting"
+        description="And now, all that's left to do is plot the map." 
       /> 
       <ExplorationItem 
         title=""
