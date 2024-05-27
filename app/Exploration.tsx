@@ -85,31 +85,38 @@ export default async function Exploration() {
         title="Poverty Incidence vs Birth Rate, by Region"
         description="
           Improving on the scatter plot produces the following joint plot.
-          It is readily apparent that 
-          However, this is still cluttered and we can improve this visualization further by grouping the municipalities according to the province they belong in.
-          Afterward, we can use the number of municipalities in a province as a third parameter, which will be used by the marker size.
+          From the image, one can observe that the birth rates of most Philippine municipalities cluster around the 1.0 to 1.5 births per capita range, and the poverty incidence mostly ranges from 0 to 40.
+          Basic statistical testing using Pearson correlation coefficients gives values of p = 0.212 and r = -0.03, which shows an insignificant relationship between the two variables.
+          However, we can improve this visualization further by grouping the municipalities according to the province they belong in.
         "
         imagePath="/plots/q1-1.png"
       />
       <ExplorationItem
-        title="Poverty Incidence vs Birth Rate, aggregated per province"
+        title="Aggregating per province"
         description="
-          As there are less data points, we are now able to better visualize the results above!
-          From this figure, it is also more readily apparent that the BARMM region is an outlier from the dataset, being away from the main cluster of datapoints.
-          This can be rationalized 
+          Using the number of municipalities in a province as the variable size of each marker, we are now able to better visualize the results above!
+          From this figure, it is also more readily apparent that the BARMM region is an outlier, being away from the main cluster of datapoints.
+          This can be attributed to the political instability and struggles in economic development in the Bangsamoro region, being only officially declared in 2018 and still constantly facing armed conflict in its short lifetime.
+          This results in high poverty incidence in the region regardless of birth rate.
         "
         imagePath="/plots/q1-2.png"
       />
 
       <ExplorationItem
-        title="Hey Dorothea"
-        description="Do you ever stop and think about me"
+        title="Removing BARMM as a region"
+        description="
+          As a matter of fact, if we omit this region from our computation, the plot would look a lot simpler.
+          Testing this using Pearson correlation coefficient, this would yield p = 1.64e-17 and r = 0.216, a significant improvement from the dataset that maintained BARMM as a region.
+          This gives us the insight that outside of BARMM's economic and political issues, the trend in the Philippines is that increasing povery incidence comes with increasing birth rate.
+          This can be attributed to the country's poor sex education, which results in a lack of family planning in poorer Philippine areas.
+        "
         imagePath="/plots/q1-3.png"
       />
 
       <div className="flex flex-col justify-center items-center gap-4 w-3/4">
         <p className="text-2xl font-urbanist leading-tight text-center">
-          Question 1 conclu
+          Question 1:
+          How does economic status affect the frequency of live births per unit of population?
         </p>
         <p className="text-center">
           From the analysis, location and economic status{" "}
@@ -117,15 +124,7 @@ export default async function Exploration() {
             does somewhat influence the preference on child delivery methods of
             mothers
           </strong>
-          . For location, despite the trend towards professional healthcare,
-          there still exists a significant number of Filipinos who opt for
-          traditional birth attendants, especially in regions with lower
-          economic status. Logistic regression also reveals that as poverty
-          incidence increases, the odds of opting for a health professional
-          during childbirth decreases. This preference may be influenced by
-          factors such as accessibility to professional healthcare and cultural
-          beliefs; further qualitative research can help us understand the
-          complex dynamics of childbirth choices in the Philippines!
+          . However, it is important to realize that ...
         </p>
       </div>
 
