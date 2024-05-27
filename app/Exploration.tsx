@@ -54,7 +54,7 @@ export default async function Exploration() {
 
       <ExplorationHeader
         title="Nutshell Plot" 
-        description="From here, we try to extrapolate patterns within our data; we then visualize our results to try and see if they correspond with any of our hypotheses.
+        description="From here, we try to extrapolate patterns within our data. We then visualize our results to see if they correspond with any of our hypotheses.
                     We first merge all three datasets that we've obtained."
       />
       
