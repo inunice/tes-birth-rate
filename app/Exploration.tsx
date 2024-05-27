@@ -50,15 +50,26 @@ export default async function Exploration() {
           name="Take a look at our dataset! [WIP]"
           link="https://colab.research.google.com/drive/1yBrVKPBKlfGQR4bbGP-N8Q9ZNd9hW0yD?usp=sharing"
       />
+      </div>  
 
       <ExplorationHeader
         title="Nutshell Plot" 
-        description="From here, we try to extrapolate patterns within our data; we then visualize our results to try and see if they correspond with any of our hypotheses."
+        description="From here, we try to extrapolate patterns within our data; we then visualize our results to try and see if they correspond with any of our hypotheses.
+                    We first merge all three datasets that we've obtained."
       />
-  
+      
+      <ExplorationItem
+        title="Matching Location Names"
+        description="Our key in merging the three datasets is the 'Province' and 'Municipality'. To match them, we remove information inside parentheses. They usually include additional information like '(Capital)'. We also set both columns to title case. Next, we check for any location that does not match between the datasets and manually correct them. These cases are usually due to different spellings (Pinamungahan, Pinamungajan), mispelled words (San Idelfonso, San Ildefonso), different conventions (City Of Carmona, Carmona), or old names (Bumbaran, Amai Manabilang)."
+      />
+      <ExplorationItem
+        title="Merged Dataframe"
+        description="After ensuring all locations are matched, we merge the three datasets into one dataframe with 1634 rows (no data loss!). The dataframe has information on location (region, province, municipality), poverty incidence, total population, total births, and delivery methods."
+      /> 
+      
       <ExplorationItem 
         title="Geospatial Mapping"
-        description="Nowmhow poverty incidence and birth rate affect 
+        description="Now how poverty incidence and birth rate affect 
                     different areas of the Philippines, then one option would be to plot our data geospatially  
                     using colors, across different provinces in the country. This would help us gain an intuitive understanding 
                     of how these variables correlate and interact with one another "
@@ -89,7 +100,7 @@ export default async function Exploration() {
          Philippine map. To do this, we would need a way to represent two variables using color. Our solution: we created this 2D colormap by linear interpolating two 1-dimensional colormaps! Isn’t that neat? "
       /> 
 
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center"> 
         <Image
           src={"/plots/nutshell-legend.png"}
           width={700}
@@ -127,30 +138,24 @@ export default async function Exploration() {
         description="We notice that:"
       />
 
-      </div>  
-      <ExplorationItem
-        title="Matching Location Names"
-        description="Our key in merging the three datasets is the 'Province' and 'Municipality'. To match them, we remove information inside parentheses. They usually include additional information like '(Capital)'. We also set both columns to title case. Next, we check for any location that does not match between the datasets and manually correct them. These cases are usually due to different spellings (Pinamungahan, Pinamungajan), mispelled words (San Idelfonso, San Ildefonso), different conventions (City Of Carmona, Carmona), or old names (Bumbaran, Amai Manabilang)."
-      />
-      <ExplorationItem
-        title="Merged Dataframe"
-        description="After ensuring all locations are matched, we merge the three datasets into one dataframe with 1634 rows (no data loss)!. The dataframe has information on location (region, province, municipality), poverty incidence, total population, total births, and delivery methods."
-      />
+      
 
       <div className="h-0.5 w-8/12 bg-teal my-2 mt-4">&nbsp;</div>
 
       <ExplorationHeader
         title="Exploring Data"
-        description="Now that we have our data ready, we can start exploring it! We will look at the distribution of our data, check for any outliers, and see if there are any patterns or relationships between our variables."
-      />
+        description="We now look at the distribution of our data, check for any outliers, and see if there are any significant relationships between our variables."
+      /> 
       <ExplorationItem
         title="Birth Rate Distribution"
-        description="After calculating the birth rate from the birth count and total population, we can plot it per region. Without considering outliers, the highest birth rate is around 1.75% in MIMAROPA, while the lowest is 0.65% in BARMM. Bicol has the highest average birth rate."
+        description="After calculating the birth rate from the birth count and total population, we can plot it per region. Without considering outliers, the highest municipal birth rate is 1.75% (found in MIMAROPA) , while the lowest is 0.65% (found in BARMM). 
+        In terms of average per region, Bicol has the highest birth rate."
         imagePath="/plots/eda-1.png"
       />
       <ExplorationItem
         title="Poverty Incidence and Birth Rate"
-        description="We plot the poverty incidence against the birth rate for each municipality. Since no trend is apparent at this point, we will need to explore further!"
+        description="We plot the poverty incidence against the birth rate for each municipality. Since there are no apparent trends at this point, 
+        we explore further!"
         imagePath="/plots/eda-2.png"
       />
 
