@@ -106,7 +106,7 @@ export default async function Exploration() {
         title="Removing BARMM as a region"
         description="
           As a matter of fact, if we omit this region from our computation, the plot would look a lot simpler.
-          Testing this using Pearson correlation coefficient, this would yield p = 1.64e-17 and r = 0.216, a significant improvement from the dataset that maintained BARMM as a region.
+          Testing this using Pearson correlation coefficient, this would yield p = 1.64e-17 and r = 0.216, implying a strong significant correlation.
           This gives us the insight that outside of BARMM's economic and political issues, the trend in the Philippines is that increasing povery incidence comes with increasing birth rate.
           This can be attributed to the country's poor sex education, which results in a lack of family planning in poorer Philippine areas.
         "
@@ -119,12 +119,14 @@ export default async function Exploration() {
           How does economic status affect the frequency of live births per unit of population?
         </p>
         <p className="text-center">
-          From the analysis, location and economic status{" "}
+          Economic status and birth rate{" "}
           <strong>
-            does somewhat influence the preference on child delivery methods of
-            mothers
+            are strongly and significantly correlated but only when BARMM is excluded, i.e. the 
+            relationship is not significant otherwise
           </strong>
-          . However, it is important to realize that ...
+          .
+          This can be attributed to a variety of factors, including poor education quality and poor public awareness about safety in sex.
+          However, while this takeaway is useful insight for analyzing the current status of the nation, it is still important to realize that it is not proper to exclude any Philippine region out of the narrative, regardless of how problematic the region may be.
         </p>
       </div>
 
