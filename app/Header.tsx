@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+import Button from "@/components/ui/Button";
 
 export default async function Header() {
   return (
@@ -56,6 +57,10 @@ export default async function Header() {
           <div className="px-3 py-1 bg-naples-yellow rounded-lg">
             <span className="opacity-60 font-bold">Jose Tomanan</span>
           </div>
+          <Button
+            name="GitHub Repository"
+            link="https://github.com/inunice/tes-birth-rate"
+          />
         </div>
       </div>
     </div>

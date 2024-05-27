@@ -17,7 +17,7 @@ export default async function Exploration() {
           <Button
             className="whitespace-nowrap"
             name="Take a look at our full exploration tour!"
-            link="https://colab.research.google.com/drive/1yBrVKPBKlfGQR4bbGP-N8Q9ZNd9hW0yD?usp=sharing"
+            link="https://colab.research.google.com/drive/13XMDQ4YN-O8kFPMJfu63bJnVCbdnxs-X?usp=sharing"
           />
         </div>
       </div>
