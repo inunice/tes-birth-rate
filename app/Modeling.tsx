@@ -5,7 +5,6 @@ import ExplorationHeader from "@/components/ui/ExplorationHeader";
 import ExplorationItem from "@/components/ui/ExplorationItem";
 import Image from "next/image";
 
-
 export default async function Exploration() {
   return (
     <div className="w-8/12 flex flex-col items-center justify-center gap-10">
@@ -17,11 +16,9 @@ export default async function Exploration() {
         <div className="flex justify-center w-full">
           <Button
             className="whitespace-nowrap"
-            name="Checkout our modelling process"
+            name="Check out our modelling process"
             link="https://colab.research.google.com/drive/10E4--CL162Sd65KdapbeW9natzQgm6Jm?fbclid=IwAR1O-5xi22hZiKSnYkb50Lp-DXp4-bC8PMh6qxLQF7AssEXQgTHRMVairao#scrollTo=GFKI7r_0lJE_"
           />
-
-          
         </div>
       </div>
 
@@ -30,12 +27,18 @@ export default async function Exploration() {
         description="
         As a prerequisite, we categorize Birth Rates into Birth Rate Categories, i.e. classes of High (greater than 3.10%), Medium (between 1.078% and 3.10%), or Low (less than 1.078%), where these classifications are from the definition provided by the World Bank’s data.  To visualize this change, we use Pandas to visualize how these birth rates are currently distributed in the dataset. We can easily see that the dataset is skewed, and higher birth rates are underrepresented during the training of this model. This should be kept in mind during interpretation of the results.
         "
-        /* 
-          FOR HYPERLINKING SA "World Bank":
-          https://data.worldbank.org/indicator/SP.DYN.CBRT.IN?end=2022&start=2022&view=map
-        */ 
-        imagePath="/modelling/modelling-1.png"
-        /* ^^ FOR RESIZING */
+      />
+      <span className="text-gray-500 text-center">
+        Reference:{" "}
+        <a href="https://data.worldbank.org/indicator/SP.DYN.CBRT.IN?end=2022&start=2022&view=map">
+          World Bank
+        </a>
+      </span>
+      <Image
+        src="/modelling/modelling-1.png"
+        width={400}
+        height={100}
+        className="sm:w-5/12 w-full"
       />
 
       <ExplorationItem
@@ -55,11 +58,9 @@ export default async function Exploration() {
       <ExplorationItem
         title="Training Results"
         description="
-        After model training, the model provided a training accuracy of 81%, and a test accuracy of 84%. As for the cross-validation, the process showed a mean accuracy of 79%.
+        After model training, the model provided a training accuracy of 81%, and a test accuracy of 84%. As for the cross-validation, the process showed a mean accuracy of 79%. With this, we can infer that the model is not overfitting and is generalizing well to unseen data. The chosen features were also found to be significant in predicting the target variable.
         "
-        /* ^^ U CAN ADD MORE IF U WANT */
       />
-
     </div>
   );
 }

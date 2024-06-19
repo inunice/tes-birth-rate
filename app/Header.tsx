@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 export default async function Header() {
   return (
-    <div className="w-8/12 my-[200px] flex flex-row items-center justify-center gap-[1px]">
+    <div className="sm:w-8/12 w-9/12 my-[200px] flex sm:flex-row flex-col items-center justify-center gap-[100px]">
       <div className="flex-1">
         <span
           className="font-semibold 

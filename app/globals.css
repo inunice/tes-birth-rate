@@ -22,7 +22,7 @@
         background-image: url('background.avif'); /* Add your image path */
         background-size: auto;  
         background-repeat: repeat;
-        opacity: 0.035; /* Adjust for desired transparency level */
+        opacity: 0.03; /* Adjust for desired transparency level */
         z-index: -1; /* Ensure the overlay is behind the content */
       }  
     }

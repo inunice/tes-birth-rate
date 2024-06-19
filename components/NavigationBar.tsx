@@ -23,7 +23,7 @@ export default function NavBar() {
       <div className="flex flex-row justify-center">
         <div className="flex w-full max-w-4xl items-center justify-between p-3 text-sm">
           <div className="flex gap-1">
-            <ul className="flex gap-5 flex-row justify-center items-center pl-5 text-lg font-urbanist">
+            <ul className="flex sm:gap-5 gap-2 flex-row justify-center items-center pl-5 text-lg font-urbanist flex-wrap sm:flex-nowrap">
               {links.map((link) => (
                 <li key={link}>
                   <Link

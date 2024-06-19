@@ -10,8 +10,8 @@ export default async function Exploration() {
     <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Exploration" />
       <div className="flex flex-col justify-center items-center gap-4">
-        <p className="text-2xl font-urbanist leading-tight text-gray-600 italic">
-          Exploring our data is the first step to understanding it better.
+        <p className="text-2xl font-urbanist leading-tight">
+          Exploring our data is the first step to understanding it better!
         </p>
         <div className="flex justify-center w-full">
           <Button
@@ -123,7 +123,7 @@ export default async function Exploration() {
         imagePath="/plots/q1-3.png"
       />
 
-      <div className="flex flex-col justify-center items-center gap-4 w-3/4">
+      <div className="flex flex-col justify-center items-center gap-4 sm:w-3/4">
         <p className="text-2xl font-urbanist leading-tight text-center">
           Question 1: How does economic status affect the frequency of live
           births per unit of population?
@@ -181,7 +181,7 @@ export default async function Exploration() {
         Although, the low R-squared value (0.35) can suggest that there are likely other factors, too."
       />
 
-      <div className="flex flex-col justify-center items-center gap-4 w-3/4">
+      <div className="flex flex-col justify-center items-center gap-4 sm:w-3/4">
         <p className="text-2xl font-urbanist leading-tight text-center">
           Question 2: Which child delivery method do mothers prefer more, and
           does it correlate to location & economic status?
@@ -229,7 +229,7 @@ export default async function Exploration() {
         "
       />
 
-      <div className="w-full flex items-center justify-center gap-[50px]">
+      <div className="w-full flex flex-wrap items-center justify-center gap-[50px]">
         <Image src={"/plots/nutshell-poverty.png"} width={450} height={450} />
         <Image src={"/plots/nutshell-birth.png"} width={400} height={400} />
       </div>
@@ -265,11 +265,11 @@ export default async function Exploration() {
       />
 
       <div className="flex flex-col w-full">
-        <div className="flex flex-row justify-center gap-10 w-full">
-          <p className="text-xl font-bold text-bittersweet w-1/6 leading-tight">
+        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full flex-wrap">
+          <p className="text-xl font-bold text-bittersweet sm:w-1/6 leading-tight">
             Analysis
           </p>
-          <div className="w-5/6 gap-3 flex flex-col">
+          <div className="sm:w-5/6 gap-3 flex flex-col">
             <p className="leading-snug">
               Using the extremes of both axes, we determine four colors at each
               of the corners. There's blue which corresponds to low poverty

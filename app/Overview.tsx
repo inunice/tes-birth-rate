@@ -13,7 +13,7 @@ export default async function Overview() {
           It is <span className="italic">expensive</span> to have a child in
           this economy.
         </p>
-        <div className="flex flex-col gap-5 items-center justify-center w-1/2 mx-auto">
+        <div className="flex flex-col gap-5 items-center justify-center sm:w-1/2 mx-auto">
           <p className="text-lg text-center">
             Raising a child in the Philippines is estimated to cost around
             300,000 pesos per year (Isla, 2023), a considerable expense for
@@ -38,8 +38,8 @@ export default async function Overview() {
           <a href="https://www.youtube.com/watch?v=52fiLBw9PQQ">[3]</a>
         </span>
       </div>
-      <div className="flex gap-[100px] mt-7">
-        <div className="flex-1 flex flex-col gap-5 items-center justify-center w-1/2 mx-auto">
+      <div className="flex sm:flex-row flex-col sm:gap-[100px] gap-10 mt-7">
+        <div className="flex-1 flex flex-col gap-5 items-center justify-center">
           <div className="flex flex-row items-center justify-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,10 +100,10 @@ export default async function Overview() {
       </div>
 
       <div className="flex flex-col mt-10">
-        <p className="font-urbanist text-2xl font-bold text-bittersweet text-center w-1/2 mx-auto">
+        <p className="font-urbanist text-2xl font-bold text-bittersweet text-center sm:w-1/2 w-full">
           So we'd like to figure out...
         </p>
-        <div className="flex flex-row mt-10 gap-[100px]">
+        <div className="flex sm:flex-row flex-col mt-10 sm:gap-[100px] gap-10 flex-wrap">
           <div className="flex-1 flex flex-col gap-2 items-center justify-center">
             <p className="font-urbanist text-base font-bold text-teal text-center uppercase">
               Primary Question
@@ -112,7 +112,7 @@ export default async function Overview() {
               How does economic status affect the frequency of live births per
               unit of population?
             </p>
-            <p className="text-gray-500">
+            <p className="text-gray-500 text-center">
               Less economically advanced == more conscious of having children?
             </p>
           </div>
@@ -124,7 +124,7 @@ export default async function Overview() {
               Which child delivery method do mothers prefer more, and does it
               correlate to location & economic status?
             </p>
-            <p className="text-gray-500">
+            <p className="text-gray-500 text-center">
               Health professionals, traditional attendants, or other methods?
             </p>
           </div>
@@ -135,8 +135,8 @@ export default async function Overview() {
         <p className="font-urbanist text-2xl font-bold text-bittersweet text-center">
           And we hypothesize...
         </p>
-        <div className="flex flex-row mt-10 gap-[100px]">
-          <div className="flex-1 flex flex-col gap-2 items-center justify-center w-1/2 mx-auto">
+        <div className="flex sm:flex-row flex-col mt-10 sm:gap-[100px] gap-10 flex-wrap">
+          <div className="flex-1 flex flex-col gap-2 items-center justify-center">
             <p className="font-urbanist text-base font-bold text-teal text-center uppercase">
               Null Hypothesis
             </p>
@@ -159,7 +159,7 @@ export default async function Overview() {
         </div>
       </div>
 
-      <div className="flex flex-col w-3/5 mt-10 items-center justify-center gap-5">
+      <div className="flex flex-col sm:w-3/5 mt-10 items-center justify-center gap-5">
         <p className="font-urbanist text-2xl font-bold text-bittersweet text-center">
           Our plan of action!
         </p>

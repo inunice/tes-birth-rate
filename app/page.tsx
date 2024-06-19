@@ -5,7 +5,7 @@ import Overview from "@/app/Overview";
 import Collection from "@/app/Collection";
 import Exploration from "@/app/Exploration";
 import Modeling from "@/app/Modeling";
-import Results from "@/app/results";
+import Results from "@/app/Results";
 import Conclusion from "@/app/Conclusion";
 import Team from "@/app/Team";
 

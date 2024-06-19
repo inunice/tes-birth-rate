@@ -6,7 +6,7 @@ export default async function Team() {
   return (
     <div className="mb-[200px] flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Team" />
-      <div className="flex flex-col sm:flex-row w-8/12 justify-center gap-5">
+      <div className="flex flex-col sm:flex-row sm:w-8/12 w-10/12 justify-center gap-5">
         <MemberCard
           imgSrc="/img/ayen.jpg"
           name="Ayen Manguan"
