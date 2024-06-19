@@ -36,7 +36,7 @@ export default async function Results() {
       </div>  
 
       <ExplorationItem 
-      title="Excluding Bangsamoro Region" 
+      title="Excluding Bangsamoro region" 
       description="As demonstrated by our EDA, if we include all the municipalities in the Philippines, then there seems to be no significant correlation between poverty incidence and birth rate; however, as mentioned earler, this correlation becomes strongly significant once we exclude municipalities from BARMM or the Bangsamoro region. We treat this region as an outlier, and momentarily exclude this from our analysis. "
       />
 
