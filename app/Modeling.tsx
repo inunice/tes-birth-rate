@@ -11,7 +11,7 @@ export default async function Exploration() {
     <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Modeling" />
       <div className="flex flex-col justify-center items-center gap-4">
-        <p className="text-2xl font-urbanist leading-tight">
+        <p className="text-2xl font-urbanist leading-tight text-gray-600 italic">
           We now translate our findings into a machine learning model.
         </p>
         <div className="flex justify-center w-full">

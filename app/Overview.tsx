@@ -6,7 +6,7 @@ export default async function Overview() {
     <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Overview" />
       <div className="flex flex-col gap-8">
-        <p className="font-urbanist text-2xl font-bold text-bittersweet text-center">
+        <p className="font-urbanist text-2xl font-bold text-bittersweet text-center italic">
           Why are we doing this?
         </p>
         <p className="text-4xl font-urbanist text-center">

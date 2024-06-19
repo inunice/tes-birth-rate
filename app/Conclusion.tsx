@@ -10,8 +10,8 @@ export default async function Conclusion() {
     <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Conclusion" />
       <div className="flex flex-col justify-center items-center gap-4">
-        <p className="text-2xl font-urbanist leading-tight text-gray-600">
-          <i>What does this entire project want to say? Where can we go from here?</i>
+        <p className="text-2xl font-urbanist leading-tight text-gray-600 italic">
+          What does this entire project want to say? Where can we go from here?
         </p>
       </div>
 

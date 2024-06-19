@@ -15,7 +15,7 @@ export default function Overview() {
             </p>
             <p className="leading-tight">
               The exact data we need are live birth counts, poverty estimates,
-              and total population!
+              and total population.
             </p>
           </div>
           <div className="flex flex-col gap-2">

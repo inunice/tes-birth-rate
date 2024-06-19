@@ -10,8 +10,8 @@ export default async function Results() {
     <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Modeling" />
       <div className="flex flex-col justify-center items-center gap-4">
-        <p className="text-2xl font-urbanist leading-tight text-gray-600">
-          <i>What are the implications of our results?</i>
+        <p className="text-2xl font-urbanist leading-tight text-gray-600 italic">
+          What are the implications of our results?
         </p>
       </div>
       <div className="flex flex-col w-full">
@@ -54,7 +54,18 @@ export default async function Results() {
       title="Overall"
       description="Together with our data, this suggests that although economic state (i.e. poverty incidence) is one indicator of birthrate, the former is not the sole determinant of the latter. We must look at the issue not merely from a statistical perspective—but from a societal and human point of view.  "
       />
-      
+
+      <span className="text-gray-500 text-center">
+          References:{" "}
+          <a href="https://www.moneymax.ph/personal-finance/articles/cost-raising-child-philippines#:~:text=How%20Much%20Does%20It%20Cost,or%20%E2%82%B1300%2C000%20a%20year">
+            [1]
+          </a>
+          <a href="https://www.rappler.com/philippines/mindanao/japan-aid-barmm-low-birth-registration-rates/">
+            [2]
+          </a>
+          <a href="https://philippines.unfpa.org/en/node/15306">[3]</a>
+      </span>
+       
     </div>
   );
 }

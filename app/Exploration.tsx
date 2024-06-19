@@ -10,8 +10,8 @@ export default async function Exploration() {
     <div className="w-8/12 flex flex-col items-center justify-center gap-10">
       <SectionTitle title="Exploration" />
       <div className="flex flex-col justify-center items-center gap-4">
-        <p className="text-2xl font-urbanist leading-tight">
-          Exploring our data is the first step to understanding it better!
+        <p className="text-2xl font-urbanist leading-tight text-gray-600 italic">
+          Exploring our data is the first step to understanding it better.
         </p>
         <div className="flex justify-center w-full">
           <Button
