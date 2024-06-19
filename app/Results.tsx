@@ -15,7 +15,7 @@ export default async function Results() {
         </p>
       </div>
       <div className="flex flex-col w-full">
-        <div className="flex flex-row justify-center sm:gap-10 gap-2 w-full">
+        <div className="flex flex-row justify-center sm:gap-10 gap-2 w-full flex-wrap sm:flex-nowrap">
           <p className="text-xl font-bold text-bittersweet sm:w-1/6 leading-tight">
             On our machine learning model
           </p>

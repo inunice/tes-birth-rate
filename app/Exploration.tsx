@@ -265,7 +265,7 @@ export default async function Exploration() {
       />
 
       <div className="flex flex-col w-full">
-        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full flex-wrap">
+        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full flex-wrap sm:flex-nowrap">
           <p className="text-xl font-bold text-bittersweet sm:w-1/6 leading-tight">
             Analysis
           </p>
