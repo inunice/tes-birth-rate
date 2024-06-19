@@ -10,7 +10,7 @@ interface ButtonProps {
 export default function Button({ title, description, imagePath }: ButtonProps) {
   return (
     <div className="flex flex-col w-full">
-      <div className="flex flex-row justify-center sm:gap-10 gap-2 w-full flex-wrap">
+      <div className="flex flex-row justify-center sm:gap-10 gap-2 w-full flex-wrap sm:flex-nowrap">
         <p className="text-xl font-bold text-bittersweet sm:w-1/6 w-full leading-tight">
           {title}
         </p>

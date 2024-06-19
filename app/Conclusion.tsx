@@ -16,7 +16,7 @@ export default async function Conclusion() {
       </div>
 
       <div className="flex flex-col w-full">
-        <div className="flex flex-row justify-center sm:gap-10 gap-2 w-full flex-wrap">
+        <div className="flex flex-row justify-center sm:gap-10 gap-2 w-full">
           <p className="text-xl font-bold text-bittersweet sm:w-1/6 leading-tight">
             On childbirth and family planning
           </p>
@@ -43,7 +43,7 @@ export default async function Conclusion() {
       </div>
 
       <div className="flex flex-col w-full">
-        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full flex-wrap">
+        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full">
           <p className="text-xl font-bold text-bittersweet sm:w-1/6 leading-tight">
             What needs to be done
           </p>
@@ -62,7 +62,7 @@ export default async function Conclusion() {
       </div>
 
       <div className="flex flex-col w-full">
-        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full flex-wrap">
+        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full">
           <p className="text-xl font-bold text-bittersweet sm:w-1/6 leading-tight">
             Where to go from here
           </p>
@@ -83,7 +83,7 @@ export default async function Conclusion() {
       </div>
 
       <div className="flex flex-col w-full">
-        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full flex-wrap">
+        <div className="flex flex-row sm:justify-center sm:gap-10 gap-2 w-full">
           <p className="text-xl font-bold text-bittersweet sm:w-1/6 leading-tight">
             Finally...
           </p>
